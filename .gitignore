@@ -1,0 +1,6 @@
+# Avoid accidental upload of the Sketch and Figma design files
+*.sketch
+*.fig
+
+# Avoid accidental upload of the hidden system files
+.DS_Store

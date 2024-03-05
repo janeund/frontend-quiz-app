@@ -8,18 +8,49 @@
   
   <title>Frontend quiz app</title>
 </head>
-<body>
-
+<body class="page">
   <!-- Quiz menu start -->
-
-  Welcome to the Frontend Quiz!
-  Pick a subject to get started.
-
-  HTML
-  CSS
-  JavaScript
-  Accessibility
-
+  <div class="page-container">
+    <header class="header">
+      <img class="header-icon light-icon" src="" alt="">
+      <div class="mode-button"></div>
+      <img class="header-icon dark-icon" src="" alt="">
+    </header>
+    <main class="main-content">
+      <div class="text-container">
+        <h1 class="main-title">Welcome to the <span>Frontend Quiz!</span></h1>
+        <p class="main-desc">Pick a subject to get started.</p>
+      </div>
+      <div class="sections-container">
+        <ul class="sections-list">
+          <li class="list-item">
+            <a class="item-link" href="">
+              <img class="item-icon" src="./assets/images/icon-html.svg" alt="HTML">
+              <p class="item-text">HTML</p>
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="item-link" href="">
+              <img class="item-icon" src="./assets/images/icon-css.svg" alt="CSS">
+              <p class="item-text">CSS</p>
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="item-link" href="">
+              <img class="item-icon" src="./assets/images/icon-js.svg" alt="Javascript">
+              <p class="item-text">Javascript</p>
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="item-link" href="">
+              <img class="item-icon" src="./assets/images/icon-accessibility.svg" alt="Accessibility">
+              <p class="item-text">Accessibility</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
   <!-- Quiz menu end -->
 
   <!-- Quiz question start -->

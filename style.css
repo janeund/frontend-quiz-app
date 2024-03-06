@@ -150,6 +150,7 @@ textarea:not([rows]) {
 
 .bg-dark { background-color: hsl( var(--clr-navy) );}
 .bg-light { background-color: hsl( var(--clr-grey) );}
+.bg-white { background-color: hsl( var(--clr-white) );}
 .bg-grey-light { background-color: hsl( var(--clr-grey-light) );}
 
 .text-dark { color: hsl( var(--clr-dark) );}
@@ -175,6 +176,10 @@ textarea:not([rows]) {
   display: flex;
   justify-content: center;
   column-gap: 8.25rem;
+}
+
+.content-left{
+  max-width: 29rem;
 }
 
 .option-box {
@@ -247,7 +252,7 @@ textarea:not([rows]) {
   display: flex;
   align-items: center;
   column-gap: 0.875rem;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .subject-title {
@@ -343,8 +348,9 @@ textarea:not([rows]) {
    border-radius: 0.5rem;
 }
 
+
 .item-icon {
-   height: 2.5rem;
+  width: 2.5rem;
 }
 
 .item-text {
@@ -354,10 +360,6 @@ textarea:not([rows]) {
 
  
 /* Questions page */
-.question-desc{
-  max-width: 29rem;
-}
-
 .question-count {
   margin-bottom: 2.2rem;
 }
@@ -393,4 +395,12 @@ textarea:not([rows]) {
 
 .questions-page {
   display: none;
+}
+
+/* Results page */
+.result-details {
+  border-radius: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 3rem;
 }

@@ -74,7 +74,7 @@
   
    <!-- Quiz question start -->
    <article class="questions-page flex-main">
-    <div class="question-desc">
+    <div class="question-desc content-left">
       <p class="question-count text-grey fs-xs italic">Question 6 of 10</p>
       <h2 class="question-body fs-m fw-500">Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</h2>
       <div class="question-progress">
@@ -119,7 +119,22 @@
   <!-- Quiz question end -->
 
   <!-- Quiz completed start -->
-
+  <article class="results-page flex-main">
+    <h1 class="results-text content-left fs-l fw-400">Quiz completed <span class="fw-500">You scored...</span></h1>
+    <div class="results-right">
+      <div class="result-details bg-white">
+        <div class="subject-current">
+          <div class="icon-wrapper">
+            <img class="prefix-wrapper icon-bg-green" src="./assets/images/icon-css.svg" alt="CSS">
+          </div>
+          <h2 class="subject-title">CSS</h2>
+        </div>
+        <div class="score-current fs-xl">8</div>
+        <div class="score-max fs-xs text-grey">out of 10</div>
+      </div>
+      <button class="submit-button button-purple text-white fs-s" type="submit">Play Again</button>
+    </div>
+  </article>
   <!-- Quiz completed end -->
   </div>
   <script type="module" src="./script.js"></script>

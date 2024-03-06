@@ -115,6 +115,11 @@ textarea, select {
   font: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
   min-height: 10em;
@@ -137,11 +142,36 @@ textarea:not([rows]) {
    }
  }
 
-
-
 /* ------------------- */
 /* Compontents         */
 /* ------------------- */ 
+.page {
+  font-family: var(--ff-default);
+  background: url("./assets/images/pattern-background-desktop-light.svg");
+  overflow-y: hidden;
+}
+
+.header {
+  display: flex;
+  gap: 10px;
+}
+
+.mode-button {
+  display: flex;
+  align-items: center;
+  padding-inline: 5px;
+  width: 48px;
+  height: 28px;
+  border-radius: 30px;
+  background-color: hsl(var(--clr-purple));
+}
+
+.mode-toggle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-white));
+}
 
 
  

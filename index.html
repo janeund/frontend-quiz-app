@@ -9,26 +9,35 @@
   <title>Frontend quiz app</title>
 </head>
 <body class="page">
-  <!-- Quiz menu start -->
   <div class="page-container">
     <header class="header">
-      <img class="header-icon light-icon" src="./assets/images/icon-sun-dark.svg" alt="">
-      <div class="mode-button">
-        <input class="mode-toggle" type="checkbox" id="switch">
-        <label for="switch"></label>
+      <div class="subject-current">
+        <div class="icon-wrapper">
+          <img class="item-icon icon-bg-green" src="./assets/images/icon-css.svg" alt="CSS">
+        </div>
+        <h2 class="subject-title">CSS</h2>
       </div>
-      <img class="header-icon dark-icon" src="./assets/images/icon-moon-dark.svg" alt="">
+      <div class="mode-wrapper">
+        <img class="header-icon light-icon" src="./assets/images/icon-sun-dark.svg" alt="">
+        <div class="mode-button">
+          <input class="mode-toggle" type="checkbox" id="switch">
+          <label for="switch"></label>
+        </div>
+        <img class="header-icon dark-icon" src="./assets/images/icon-moon-dark.svg" alt="">
+      </div>
     </header>
-    <main class="main-content">
+
+    <!-- Quiz menu start -->
+    <article class="start-menu flex-main">
       <div class="text-container">
         <h1 class="main-title">Welcome to the <span>Frontend Quiz!</span></h1>
         <p class="main-desc">Pick a subject to get started.</p>
       </div>
-      <div class="sections-container">
-        <ul class="sections-list">
+      <div class="subjects-container">
+        <ul class="subjects-list">
           <li class="list-item">
             <a class="item-link" href="">
-              <div class="icon-wrapper icon-bg-peach">
+              <div class="prefix-wrapper icon-bg-peach">
                 <img class="item-icon" src="./assets/images/icon-html.svg" alt="HTML">
               </div>
               <p class="item-text">HTML</p>
@@ -36,7 +45,7 @@
           </li>
           <li class="list-item">
             <a class="item-link" href="">
-              <div class="icon-wrapper icon-bg-green">
+              <div class="prefix-wrapper icon-bg-green">
                 <img class="item-icon" src="./assets/images/icon-css.svg" alt="CSS">
               </div>
               <p class="item-text">CSS</p>
@@ -44,7 +53,7 @@
           </li>
           <li class="list-item">
             <a class="item-link" href="">
-              <div class="icon-wrapper icon-bg-blue">
+              <div class="prefix-wrapper icon-bg-blue">
                 <img class="item-icon" src="./assets/images/icon-js.svg" alt="Javascript">
               </div>
               <p class="item-text">Javascript</p>
@@ -52,7 +61,7 @@
           </li>
           <li class="list-item">
             <a class="item-link" href="">
-              <div class="icon-wrapper icon-bg-purple">
+              <div class="prefix-wrapper icon-bg-purple">
                 <img class="item-icon" src="./assets/images/icon-accessibility.svg" alt="Accessibility">
               </div>
               <p class="item-text">Accessibility</p>
@@ -60,31 +69,59 @@
           </li>
         </ul>
       </div>
-    </main>
-  </div>
-  <!-- Quiz menu end -->
+    </article>
+    <!-- Quiz menu end -->
+  
+   <!-- Quiz question start -->
+   <article class="questions-page flex-main">
+    <div class="question-desc">
+      <p class="question-count text-grey fs-xs italic">Question 6 of 10</p>
+      <h2 class="question-body fs-m fw-500">Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</h2>
+      <div class="question-progress">
+        <div class="progress-inner"></div>
+      </div>
+    </div>
+    <div class="choices-container">
+      <ul class="choices-list fs-s">
+        <li class="choices-item">
+          <button class="option option-box">
+            <p class="option-prefix prefix-wrapper text-grey">A</p>
+            <p class="option-text" data-number="1">HTML</p>
+          </button>
+        </li>
+        <li class="choices-item">
+          <button class="option option-box">
+            <p class="option-prefix prefix-wrapper text-grey">B</p>
+            <p class="option-text" data-number="2">HTML</p>
+          </button>
+        </li>
+        <li class="choices-item">
+          <button class="option option-box">
+            <p class="option-prefix prefix-wrapper text-grey">C</p>
+            <p class="option-text" data-number="3">HTML</p>
+          </button>
+        </li>
+        <li class="choices-item">
+          <button class="option option-box">
+            <p class="option-prefix prefix-wrapper text-grey">D</p>
+            <p class="option-text" data-number="4">HTML</p>
+          </button>
+        </li>
+        <li class="choices-item">
+          <button class="submit-button button-purple text-white fs-s" type="submit">
+            Submit Answer
+          </button>
+        </li>
 
-  <!-- Quiz question start -->
-
-   <!-- Question number of 10--> 
-
-  <!-- A
-  B
-  C
-  D
-
-  Submit answer -->
-
+      </ul>
+    </div>
+  </article>
   <!-- Quiz question end -->
 
   <!-- Quiz completed start -->
 
-  <!-- Quiz completed
-  You scored... -->
-
-  <!-- score out of 10--> 
-
   <!-- Quiz completed end -->
-
+  </div>
+  <script type="module" src="./script.js"></script>
 </body>
 </html>
